@@ -47,5 +47,6 @@ RUN expfactory install https://www.github.com/expfactory-experiments/directed-fo
 
 
 ENTRYPOINT ["/bin/bash", "/startscript.sh"]
-EXPOSE 5000
-EXPOSE 80
+#EXPOSE 5000
+#EXPOSE 80
+EXPOSE 5001
