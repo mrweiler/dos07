@@ -36,6 +36,10 @@ RUN apt-get clean          # tests, mysql,  postgres
 ########################################
 
 
+LABEL EXPERIMENT_bis11-survey /scif/apps/bis11-survey
+WORKDIR /scif/apps
+RUN expfactory install https://www.github.com/expfactory-experiments/bis11-survey
+
 LABEL EXPERIMENT_simple-reaction-time /scif/apps/simple-reaction-time
 WORKDIR /scif/apps
 RUN expfactory install https://www.github.com/expfactory-experiments/simple-reaction-time
